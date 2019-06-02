@@ -98,7 +98,7 @@ if ($result = mysqli_query($con, $sql))
   </head>
     <body>
      <nav class=" navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <a class="navbar-brand" href="#">Penthouse Alarmanlage</a>
+      <a class="navbar-brand" href="#">Alarmanlage</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
