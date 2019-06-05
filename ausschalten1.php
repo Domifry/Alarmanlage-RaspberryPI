@@ -46,7 +46,7 @@ $result = file_get_contents($url, false, $context);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   
     <link rel="stylesheet" href="/main.css">
-    <title>Penthouse Alarmanlage</title>
+    <title>Alarmanlage</title>
   </head>
     <body>
     <nav class=" navbar navbar-expand-md navbar-dark bg-dark mb-4">
