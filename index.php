@@ -48,15 +48,12 @@ if ($result = mysqli_query($con, $sql))
 			if ($result = mysqli_query($con, $sql1))
 			{
 				$row = $result->fetch_array();
-					// Add each row into our results array
 					$wert = $row['wert'];
 			}
 			if ($wert == 1){
 				return("Der Alarm ist aktuell an!");
-				//echo("<br><a href='https://deine-domain.de/alarm/ausschalten.php'> ausschalten </a>");
 			} else {
 				return("Alarm ist aktuell aus!");
-				//echo("<br><a href='https://deine-domain.de/alarm/einschalten.php'> einschalten </a>");
 			}
 			// Close connections
 			mysqli_close($con);
@@ -74,7 +71,6 @@ if ($result = mysqli_query($con, $sql))
 			if ($result = mysqli_query($con, $sql1))
 			{
 				$row = $result->fetch_array();
-					// Add each row into our results array
 					$wert = $row['wert'];
 			}
 			if ($wert == 1){
@@ -83,6 +79,52 @@ if ($result = mysqli_query($con, $sql))
 				return('  <a class="btn btn-lg btn-primary" href="https://deine-domain.de/alarm/einschalten.php" role="button">Alarm einschalten</a>');
 			}
 			// Close connections
+			mysqli_close($con);
+				}
+	function alarmstatus1() {
+		// Create connection
+		$con=mysqli_connect("localhost","DATENBANKNAME","PASSWORT","DATENBANKNAME");
+		// Check connection
+		if (mysqli_connect_errno())
+		{
+ 		 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			}
+		 $sql1 = "SELECT * FROM  `Status` WHERE  `ID` =2";
+			if ($result = mysqli_query($con, $sql1))
+			{
+				$row = $result->fetch_array();
+					// Add each row into our results array
+					$wert = $row['wert'];
+			}
+			if ($wert == 1){
+				return("Der Neustart Alarm ist aktuell an!");
+			} else {
+				return("Der Neustart Alarm ist aktuell aus!");
+			}
+			// Close connections
+			mysqli_close($con);
+				}
+				
+					function alarmbutton1() {
+		// Create connection
+		$con=mysqli_connect("localhost","DATENBANKNAME","PASSWORT","DATENBANKNAME");
+		// Check connection
+		if (mysqli_connect_errno())
+		{
+ 		 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			}
+		 $sql1 = "SELECT * FROM  `Status` WHERE  `ID` =2";
+			if ($result = mysqli_query($con, $sql1))
+			{
+				$row = $result->fetch_array();
+					// Add each row into our results array
+					$wert = $row['wert'];
+			}
+			if ($wert == 1){
+				return('  <a class="btn btn-lg btn-primary" href="https://deine-domain.de/alarm/ausschalten1.php" role="button">Alarm ausschalten</a>');
+			} else {
+				return('  <a class="btn btn-lg btn-primary" href="https://deine-domain.de/alarm/einschalten1.php" role="button">Alarm einschalten</a>');
+			}
 			mysqli_close($con);
 				}
 ?>
@@ -132,6 +174,13 @@ if ($result = mysqli_query($con, $sql))
         <h1>Alarmstatus</h1>
         <p class="lead"><?php echo(alarmstatus()); ?></p>
        <?php echo(alarmbutton()); ?>
+      </div>
+    </main>  <br /><br />
+	             <main role="main" class="container">
+      <div class="jumbotron">
+        <h1>Alarm für Neustart</h1>
+        <p class="lead"><?php echo(alarmstatus1()); ?></p>
+       <?php echo(alarmbutton1()); ?>
       </div>
     </main>
 
