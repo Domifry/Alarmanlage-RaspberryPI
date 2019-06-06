@@ -25,7 +25,7 @@ $data = array(
 	'm' => urldecode("Neustart Alarm ist jetzt aus!"),
 	's' => 3,
 	'v' => 2,
-	'i' => 24,
+	'i' => 13,
 	'k' => "DEINCODE"
 );
 $options = array(
