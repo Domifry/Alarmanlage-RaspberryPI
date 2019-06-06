@@ -26,7 +26,7 @@
                       'm' => urldecode("NeustartAlarm ist jetzt an!"),
                       's' => 3,
                       'v' => 2,
-                      'i' => 23,
+                      'i' => 12,
                       'k' => "DEINCODE"
                       );
         $options = array(
