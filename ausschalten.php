@@ -1,4 +1,5 @@
 <?php
+// https://github.com/Domifry/
     function ausschalten() {
     // Create connection
 	    //TODO Datenbank und PW eintragen
