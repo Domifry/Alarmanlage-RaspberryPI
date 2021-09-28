@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# https://github.com/Domifry/
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 import mysql.connector
