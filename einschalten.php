@@ -1,5 +1,5 @@
 <?php
-    
+    // https://github.com/Domifry/
 	function einschalten() {
      //TODO Datenbank und PW eintragen
     $con=mysqli_connect("localhost","DATENBANKNAME","PASSWORT","DATENBANKNAME");
