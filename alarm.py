@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#https://github.com/Domifry/
 import mysql.connector
 import mysql
 import argparse
