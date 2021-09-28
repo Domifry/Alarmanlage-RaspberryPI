@@ -1,4 +1,6 @@
 <?php
+// https://github.com/Domifry/
+
     function ausschalten() {
     // Create connection
     $con=mysqli_connect("localhost","DB","PW","DB");
