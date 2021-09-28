@@ -1,5 +1,5 @@
 <?php
- 
+ // https://github.com/Domifry/
 function werte() {
 	
 	// Create connection
